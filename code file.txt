@@ -1,0 +1,23 @@
+CASE
+
+WHEN "DN" =2 THEN to_string('Cropland')
+
+WHEN "DN" =3 THEN to_string('Built-up Land')
+
+WHEN "DN" =5 THEN to_string('Shrubland')
+
+WHEN "DN" =7 THEN to_string('Fallow Land')
+
+WHEN "DN" =8 THEN to_string('Wasteland')
+
+WHEN "DN" =9 THEN to_string('Water Bodies')
+
+WHEN "DN" =10 THEN to_string('Plantations')
+
+ELSE 0
+
+END
+
+
+"count"/sum("count")*100
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <DATABASE>
+    <FIELDS>
+      <FIELD TYPE="LONGINT">SEGMENT_ID</FIELD>
+      <FIELD TYPE="LONGINT">NODE_A</FIELD>
+      <FIELD TYPE="LONGINT">NODE_B</FIELD>
+      <FIELD TYPE="LONGINT">BASIN</FIELD>
+      <FIELD TYPE="LONGINT">ORDER</FIELD>
+      <FIELD TYPE="LONGINT">ORDER_CELL</FIELD>
+      <FIELD TYPE="DOUBLE">LENGTH</FIELD>
+    </FIELDS>
+  </DATABASE>
+  <SOURCE></SOURCE>
+  <HISTORY saga-version="9.7.1">
+    <TOOL library="shapes_polygons" id="11" name="Polygon Clipping">
+      <OPTION type="boolean" id="DISSOLVE" name="Dissolve Clip Features">true</OPTION>
+      <OPTION type="boolean" id="MULTIPLE" name="Multiple Input Features">true</OPTION>
+      <INPUT type="shapes" id="CLIP" name="Clip Features">
+        <FILE>C:/Users/poula/OneDrive/Desktop/Assignment 11, QGIS/UPSLOPE_WATERSHED1.shp</FILE>
+      </INPUT>
+      <INPUT_LIST type="shapes_list" id="M_INPUT" name="Input Features">
+        <INPUT type="shapes_list" id="M_INPUT" name="Input Features">
+          <FILE>C:/Users/poula/OneDrive/Desktop/Assignment 11, QGIS/channel.shp</FILE>
+        </INPUT>
+      </INPUT_LIST>
+      <OUTPUT type="shapes_list" id="M_OUTPUT" name="Output Features">channel [clipped]</OUTPUT>
+    </TOOL>
+  </HISTORY>
+  <FILE></FILE>
+  <DESCRIPTION></DESCRIPTION>
+  <PROJECTION>
+    <WKT2>PROJCRS["WGS 84 / UTM zone 44N",BASEGEODCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]],ID["EPSG",6326]],PRIMEM["Greenwich",0,ANGLEUNIT["Degree",0.0174532925199433]]],CONVERSION["UTM zone 44N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",81,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]],ID["EPSG",16044]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1,ID["EPSG",9001]]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1,ID["EPSG",9001]]]]</WKT2>
+    <PROJ>+proj=utm +zone=44 +datum=WGS84 +units=m +no_defs +type=crs</PROJ>
+    <CODE>-1</CODE>
+  </PROJECTION>
+</SAGA_METADATA>

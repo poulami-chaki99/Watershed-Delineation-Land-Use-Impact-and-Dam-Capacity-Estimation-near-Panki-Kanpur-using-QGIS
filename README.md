@@ -1,0 +1,2 @@
+# Watershed-Delineation-Land-Use-Impact-and-Dam-Capacity-Estimation-near-Panki-Kanpur-using-QGIS
+This assignment project, done in Computer Methods in Hydrology and Hydraulics during my M.Tech 2nd semester, analyzed the Pandu River watershed near Panki, Kanpur using QGIS, DEM, and GEE. LULC showed cropland dominance, and a simulated dam at 130 m HFL gave ~228 million m³ capacity, highlighting geospatial tools in water resource planning.
